@@ -1,0 +1,17 @@
+{
+  "name": "zapier-loopquest",
+  "version": "1.0.0",
+  "description": "LoopQuest integration for Zapier — send AI output for human-in-the-loop review.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test"
+  },
+  "dependencies": {
+    "zapier-platform-core": "^16.4.0"
+  },
+  "devDependencies": {
+    "zapier-platform-schema": "^16.4.0"
+  },
+  "private": true,
+  "license": "MIT"
+}
