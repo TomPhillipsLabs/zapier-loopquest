@@ -7,10 +7,10 @@
     "test": "node --test"
   },
   "dependencies": {
-    "zapier-platform-core": "^16.4.0"
+    "zapier-platform-core": "19.0.0"
   },
   "devDependencies": {
-    "zapier-platform-schema": "^16.4.0"
+    "zapier-platform-schema": "19.0.0"
   },
   "private": true,
   "license": "MIT"
