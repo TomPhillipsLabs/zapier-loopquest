@@ -1,5 +1,6 @@
 const authentication = require("./authentication");
 const createReviewTask = require("./creates/create_review_task");
+const newVerdict = require("./triggers/new_verdict");
 const { version } = require("./package.json");
 const platformVersion = require("zapier-platform-core").version;
 
@@ -17,6 +18,9 @@ module.exports = {
   platformVersion,
   authentication,
   beforeRequest: [includeBearer],
+  triggers: {
+    [newVerdict.key]: newVerdict,
+  },
   creates: {
     [createReviewTask.key]: createReviewTask,
   },
