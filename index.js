@@ -17,6 +17,8 @@ module.exports = {
   version,
   platformVersion,
   authentication,
+  // Don't auto-strip input — pass exactly what the user mapped (predictability).
+  flags: { cleanInputData: false },
   beforeRequest: [includeBearer],
   triggers: {
     [newVerdict.key]: newVerdict,

@@ -8,19 +8,12 @@ module.exports = {
       label: "API Key",
       type: "password",
       required: true,
-      helpText: "Your LoopQuest workspace API key (Workspaces -> API keys).",
-    },
-    {
-      key: "baseUrl",
-      label: "Base URL",
-      type: "string",
-      required: false,
-      default: "https://loopquest.tomphillips.uk",
-      helpText: "Your LoopQuest deployment URL.",
+      helpText:
+        "Your LoopQuest workspace API key. Create one under Workspaces → your project → API keys. See [the API reference](https://loopquest.tomphillips.uk/docs) for details.",
     },
   ],
   test: {
-    url: "{{bundle.authData.baseUrl}}/api/v1/me",
+    url: "https://loopquest.tomphillips.uk/api/v1/me",
     method: "GET",
   },
   connectionLabel: "{{workspace}}",
